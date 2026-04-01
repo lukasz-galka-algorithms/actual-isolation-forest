@@ -1,8 +1,8 @@
 import random
 
-from algorithms.ActualExtendedIsolationForest import ActualExtendedIsolationForest
-from algorithms.ActualIsolationForest import ActualIsolationForest
-from algorithms.ActualProximityIsolationForest import ActualProximityIsolationForest
+from algorithms.RTSExtendedIsolationForest import RTSExtendedIsolationForest
+from algorithms.RTSIsolationForest import RTSIsolationForest
+from algorithms.RTSProximityIsolationForest import RTSProximityIsolationForest
 
 
 class AlgorithmFactory:
@@ -10,11 +10,11 @@ class AlgorithmFactory:
     def create(algorithm):
         name, short_name, params = algorithm
 
-        if name == "ActualIsolationForest":
-            return ActualIsolationForest(**params)
-        elif name == "ActualExtendedIsolationForest":
-            return ActualExtendedIsolationForest(**params)
-        elif name == "ActualProximityIsolationForest":
-            return ActualProximityIsolationForest(**params)
+        if name == "RTSIsolationForest":
+            return RTSIsolationForest(**params)
+        elif name == "RTSExtendedIsolationForest":
+            return RTSExtendedIsolationForest(**params)
+        elif name == "RTSProximityIsolationForest":
+            return RTSProximityIsolationForest(**params)
         else:
             raise ValueError(f"Unknown algorithm: {name}")

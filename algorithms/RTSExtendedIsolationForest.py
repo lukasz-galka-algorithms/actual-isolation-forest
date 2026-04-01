@@ -122,7 +122,7 @@ class ExtendedITree:
             X
         )
 
-class ActualExtendedIsolationForest:
+class RTSExtendedIsolationForest:
 
     def __init__(self, trees_number=100, samples_per_tree=256, extension_level=0, seed=None, **kwargs):
         self.uses_gpu = False

@@ -37,9 +37,9 @@ DATASETS_NAMES = [
     ]
 
 algorithms = [
-        ("ActualIsolationForest", "AIF", {"trees_number": 100, "samples_per_tree": 256}),
-        ("ActualExtendedIsolationForest", "AEIF", {"trees_number": 100, "samples_per_tree": 256}),
-        ("ActualProximityIsolationForest", "APIF", {"trees_number": 100, "samples_per_tree": 256})
+        ("RTSIsolationForest", "RTS-IF", {"trees_number": 100, "samples_per_tree": 256}),
+        ("RTSExtendedIsolationForest", "RTS-EIF", {"trees_number": 100, "samples_per_tree": 256}),
+        ("RTSProximityIsolationForest", "RTS-PIF", {"trees_number": 100, "samples_per_tree": 256})
     ]
 
 for dataset in DATASETS_NAMES:
